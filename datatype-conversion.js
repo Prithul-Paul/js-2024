@@ -8,5 +8,11 @@ let numberToString = Number(score)
 let isLoggedIn = undefined;
 
 let BooleanIsLoggedIn = Boolean(isLoggedIn);
-console.log(typeof(BooleanIsLoggedIn));
-console.log(BooleanIsLoggedIn);
+// console.log(typeof(BooleanIsLoggedIn));
+// console.log(BooleanIsLoggedIn);
+
+/* +++++++++++++++ Operation ++++++++++++ */
+let x = 3;
+let y = ++x;
+
+console.table([x, y]);
