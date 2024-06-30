@@ -13,7 +13,7 @@ let user = {
 
 // function one(){
 //     let username = "Prithul"
-//     console.log(this.username) // "this" cannot be used in the function, it is only be used in objects
+//     // console.log(this.username) // "this" cannot be used in the function, it is only be used in objects
 // }
 
 let one = () => {
@@ -24,5 +24,5 @@ one();
 
 
 // let addTwoNum = (num1, num2) => { return num1+num2 }
-let addTwoNum = (num1, num2) => ( num1+num2)
-console.log(addTwoNum(5, 6));
+// let addTwoNum = (num1, num2) => ( num1+num2)
+// console.log(addTwoNum(5, 6));
