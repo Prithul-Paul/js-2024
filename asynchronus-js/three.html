@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Async</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Prithul</h1>
+        <button class="start" id="start">Start</button>
+        <button class="stop" id="stop">Stop</button>
+    </div>
+
+    <script>
+        function randomColor() {
+            const hex = "0123456789ABCDEF";
+            let color = "#";
+            for(i=0; i<6; i++){
+                color += hex[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        // console.log(randomColor());
+        // document.body.style.backgroundColor = randomColor();
+        let start
+        document.querySelector("#start").addEventListener('click', () => {
+            if(!start){
+                start = setInterval(()=>{
+                    document.body.style.backgroundColor = randomColor();
+                    // console.log(randomColor());
+                }, 1000);
+            }
+        });
+        document.querySelector("#stop").addEventListener('click', () => {
+            clearInterval(start);
+            // console.log(start);
+            start = null;
+
+        });
+    </script>
+</body>
+</html>
